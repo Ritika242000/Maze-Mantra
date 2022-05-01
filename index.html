@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* margin: 0px; */
+            /* padding: 0px; */
+            background-image: url('images/2.jpg');
+             /* background-repeat: no-repeat;  */
+            background-size:  100% 100vh;
+            /* background-position:center ;
+           background-attachment: fixed;
+            overflow: auto; */
+             /* height: 2000px; */
+            position:relative;
+        }
+        .head{
+            /* border: 2px solid white; */
+        }
+        .left{
+            position: absolute;
+            left: 10px;
+            top:10px;
+            /* border: 2px solid red; */
+            display:inline-block;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        .mid{
+             display: block;   /*to make elemt in cntre we have to do these s3 steps */
+            width:50%;
+            margin: 20px auto;
+            /* border:2px solid blue; */
+            
+        }
+        .right{
+            position: absolute;
+            right: 0px;
+            top:0px;
+            /* border:2px solid green; */
+            display: inline-block;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 40px 40px;
+            font-size: 20px;
+        }
+        .navbar li a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        .left img{
+            width: 60px;
+            margin: auto;
+            display: block;
+        }
+        .btn{
+            margin: 0px 8px;
+            background-color: black;
+            color: honeydew;
+            padding: 5px 10px;
+            border: 2px solid grey;
+            font-size: 15px;
+            cursor:pointer;
+            font-family: font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius:10px
+        }
+        .btn:hover{
+            background-color:grey;
+        }
+        .container{
+            /* border: 2px solid white; */
+            margin: 30px;
+            padding: 30px;
+            width: 28%;
+            display: block;
+            border-radius: 10px;
+        }
+        .fgroup input{
+         text-align: center;
+         display: block;
+         width: 400px;
+         padding: 10px;
+         border: 2px solid grey;
+         margin: 7px auto;
+         border-radius: 10px;
+         background-color:white;
+         font-size: 20px;
+         color: black;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .fgroup:hover{
+            background-color:grey;
+        }
+        .container h1{
+               text-align: center;
+               color: white;
+               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .container button{
+            display: block;
+            width: 420px;
+            margin:20px auto;
+            border-radius: 10px;
+            padding:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <div class="left">
+           <img src="images/1.jpg" alt="not available">
+           <div>Aman's library</div>
+        </div>
+
+        <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Books available</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Best book collection</h1>
+      <form action="noaction.php">
+          <div class="fgroup">
+              <input type="text" name="" placeholder="Enter your name">
+          </div>
+          <div class="fgroup">
+            <input type="text" name="" placeholder="Enter No of Books">
+        </div>
+        <div class="fgroup">
+            <input type="text" name="" placeholder="Enter your locality">
+        </div>
+        <div class="fgroup">
+            <input type="text" name="" placeholder="Enter your Number">
+        </div>
+        <button class="btn">SUBMIT</button>
+      </form>
+    </div>
+</body>
+
+</html>
